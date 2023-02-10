@@ -69,6 +69,8 @@ public class FeistelCipherTp {
         //
         // Diviser en deux blocs de 4 bits K = K'1 || K'2
         System.out.println("K1 = " + tabCle[0] + " " + tabCle[1] + " " + tabCle[2] + " " + tabCle[3]);
+        //
+        System.out.println("K2 = " + tabCle[4] + " " + tabCle[5] + " " + tabCle[6] + " " + tabCle[7]);
     }
     
 }
