@@ -71,6 +71,11 @@ public class FeistelCipherTp {
         System.out.println("K1 = " + tabCle[0] + " " + tabCle[1] + " " + tabCle[2] + " " + tabCle[3]);
         //
         System.out.println("K2 = " + tabCle[4] + " " + tabCle[5] + " " + tabCle[6] + " " + tabCle[7]);
+        //
+        if (true) {
+            
+        } else {
+        }
     }
     
 }
