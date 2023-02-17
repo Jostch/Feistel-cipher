@@ -5,7 +5,7 @@
  */
 package feistelciphertp;
 import javax.swing.*;
-import java.util.Arrays;
+import java.util.*;
 /**
  *
  * @author GroupMCS
@@ -74,27 +74,18 @@ public class FeistelCipherTp {
         // Diviser en deux blocs de 4 bits K = K'1 || K'2
         System.out.print("K'1 = ");
         for (int i = 0; i < 4; i++) {
-            kDroite[i] = tabCle[i];
-            System.out.print(kDroite[i] + " | ");
+            kGauche[i] = tabCle[i];
+            System.out.print(kGauche[i] + " | ");
         }
         System.out.println("");
-        
+        //
         System.out.print("K'2 = ");
         for (int i = 0; i < 4; i++) {
             for (int j = 4; j < 8; j++) {
-                kGauche[i] = tabCle[j];
+                kDroite[i] = tabCle[j];
             }
-            System.out.print(kGauche[i] + " | ");
+            System.out.print(kDroite[i] + " | ");
         }
-        
         System.out.println("");
-        
-        
-        
-//        System.out.println("K1 = " + tabCle[0] + " " + tabCle[1] + " " + tabCle[2] + " " + tabCle[3]);
-//        //
-//        System.out.println("K2 = " + tabCle[4] + " " + tabCle[5] + " " + tabCle[6] + " " + tabCle[7]);
-//        //
-        
     }
 }
